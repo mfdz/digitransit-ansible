@@ -15,7 +15,10 @@
     dest: /var/delay-prediction/
     mode: "+x"
   with_items:
-    - delay-prediction-service
+    - build
+    - start
+    - stop
+    - cleanup
 
 - name: Install base packages
   package:
